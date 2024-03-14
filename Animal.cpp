@@ -5,13 +5,15 @@ Animal::Animal()
     coat = "";
     name = "";
     age = 0;
+    weight = 0;
 }
 
-Animal::Animal(string coat, string n, int a)
+Animal::Animal(string coat, string n, int a, float weight)
 {
     this->coat = coat;
     name = n;
     this->age = a; // unneccessary use of this pointer
+    this->weight = weight;
 }
 
 Animal::~Animal()
@@ -34,6 +36,11 @@ void Animal::setAge(int age)
     this->age = age;
 }
 
+void Animal::setWeight(float w)
+{
+    weight = w;
+}
+
 string Animal::getCoat()
 {
     return coat;
@@ -49,9 +56,15 @@ int Animal::getAge() const
     return age;
 }
 
+float Animal::getWeight() const
+{
+    return weight;
+}
+
 void Animal::displayAnimal()
 {
     cout << "Coat:\t" << coat << endl
          << "Name:\t" << name << endl
-         << "Age:\t" << age << endl << endl;
+         << "Age:\t" << age << endl
+         << "Weight:\t" << weight << endl;
 }
