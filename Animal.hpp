@@ -1,5 +1,5 @@
 #include <iostream>
-using std::cout, std::cin, std::endl, std::string;
+using namespace std;
 
 class Animal 
 {

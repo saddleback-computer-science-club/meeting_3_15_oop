@@ -1,9 +1,10 @@
-#include "Animal.h"
+#include "Animal.cpp"
 
 int main()
 {
   Animal animal1("Fur", "Dog", 4, 25);
 
   cout << animal1.getAge() << endl;
+
   return 0;
 }
