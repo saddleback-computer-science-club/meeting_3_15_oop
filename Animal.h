@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+using std::cout, std::cin, std::endl, std::string;
 
 class Animal 
 {
@@ -10,6 +10,7 @@ private:
 public:
     Animal();
     Animal(string coat, string n, int a);
+    ~Animal();
 
     void setCoat(string coat);
     void setName(string n);
@@ -17,6 +18,8 @@ public:
 
     string getCoat();
     string getName();
-    string
+    int getAge() const;
+
+    void displayAnimal();
 
 };
