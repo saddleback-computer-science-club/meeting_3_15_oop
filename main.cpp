@@ -2,6 +2,8 @@
 
 int main()
 {
-  cout << "Hello World" << endl;
+  Animal animal1("Fur", "Dog", 4, 25);
+
+  cout << animal1.getAge() << endl;
   return 0;
 }
