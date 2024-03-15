@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <iomanip>
-using namespace std;
+using std::string;
 
 class University
 {
@@ -27,8 +27,8 @@ class University
         // Behaviors
 
         // Setters/ Mutators
-        void changeNumStudents(int num_s);
-        void changeNumFaculty(int num_f);
+        void changeNumStudents(int num);
+        void changeNumFaculty(int num);
         void setTuition(float tuition);
 
         // Getter

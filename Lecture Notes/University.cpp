@@ -1,6 +1,7 @@
 // Implementation file for University Class
 
 #include "University.hpp"
+using namespace std;
 
 // Default Constructor
 University::University()
@@ -49,14 +50,14 @@ void University::setTuition(float tuition)
     annual_tuition = tuition;
 }
 
-void University::changeNumStudents(int num_s)
+void University::changeNumStudents(int num)
 {
-    number_students = num_s;
+    number_students = num;
 }
 
-void University::changeNumFaculty(int num_f)
+void University::changeNumFaculty(int num)
 {
-    number_faculty = num_f;
+    number_faculty = num;
 }
 
 bool University::getPublicStatus()
@@ -68,7 +69,7 @@ float University::calcStudentToFacultyRatio()
 {
     float ratio = 0.0;
 
-    ratio = number_students / float (number_faculty);
+    ratio = number_students / static_cast<float>(number_faculty);
 
     return ratio;
 }
@@ -79,7 +80,7 @@ float University::calcRevenuePerFaculty()
     float avg_revenue_per_faculty = 0.0;
 
     total_revenue = number_students * annual_tuition;
-    avg_revenue_per_faculty = total_revenue / float(number_faculty);
+    avg_revenue_per_faculty = total_revenue / static_cast<float>(number_faculty);
 
     return avg_revenue_per_faculty;
 }
