@@ -1,0 +1,3 @@
+/Users/rominapouya/Documents/GitHub/meeting_3_15_oop/Lecture Notes/CMakeFiles/main.dir
+/Users/rominapouya/Documents/GitHub/meeting_3_15_oop/Lecture Notes/CMakeFiles/edit_cache.dir
+/Users/rominapouya/Documents/GitHub/meeting_3_15_oop/Lecture Notes/CMakeFiles/rebuild_cache.dir

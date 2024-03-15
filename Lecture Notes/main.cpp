@@ -1,4 +1,10 @@
-#include "University.cpp"
+//#include "University.cpp"
+//#include "PublicUni.cpp"
+#include "PublicUni.hpp"
+#include "PrivateUni.hpp"
+#include <iomanip>
+
+using namespace std;
 
 int main()
 {
@@ -34,6 +40,48 @@ int main()
        << "------------------------------------\n\n";
 
   // Part II - Inheritance (Romina)
+  // PublicUniversity 
+
+     // Create an instance of PrivateUni
+    PrivateUni privateUni("Private University", 5000, 200, 15000, 100000);
+
+    // Create an instance of PublicUni
+    PublicUni publicUni("Public University", 7000, 300, 12000, 500000);
+
+    // Display information about private university
+     cout << "Private University Information:" << endl;
+    cout << "------------------------------------\n";
+    privateUni.displaySchoolInfo();
+    cout << "Donation: $" << privateUni.getDonation() << endl;
+    cout << "------------------------------------\n\n";
+
+    // Display information about public university
+    cout << "\nPublic University Information:" << endl;
+    cout << "------------------------------------\n";
+    publicUni.displaySchoolInfo();
+    cout << "Government Funding: $" << publicUni.getGovernmentFunding() << endl;
+    cout << "------------------------------------\n\n";
+
+
+    // Exercise II
+    //using the public functions of the subclasses change the goernmentFunding and the donation
+    // and output the new values
+    publicUni.setGovernmentFunding(121212121212);
+    privateUni.setDonation(1200000000);
+
+    cout << "------------------------------------\n";
+    cout << "Here is the updated government funding: ";
+    cout <<  publicUni.getGovernmentFunding() << endl;
+     cout << "------------------------------------\n";
+
+
+    cout << "------------------------------------\n";
+    cout << "Here is the donation: ";
+    cout <<  privateUni.getDonation() << endl;
+    cout << "------------------------------------\n";
+
+    //Challenge : change the access specifier of the subclasses, what would it change?
+
 
   return 0;
 }

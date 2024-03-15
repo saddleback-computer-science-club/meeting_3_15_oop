@@ -1,5 +1,5 @@
 // Implementation file for University Class
-// Hello World
+#ifndef Uni
 #include "University.hpp"
 using namespace std;
 
@@ -89,3 +89,5 @@ void University::displaySchoolInfo()
         << name << " has " << number_faculty << " faculty members and " << number_students << " students." 
         << endl << endl;
 }
+
+#endif
