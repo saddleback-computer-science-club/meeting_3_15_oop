@@ -24,5 +24,4 @@ public:
     float getWeight() const;
 
     void displayAnimal();
-
 };
