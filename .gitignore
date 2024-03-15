@@ -36,6 +36,6 @@
 # Misc
 main
 Makefile
-main.sdSYM
+main.dSYM
 # OSX
 .DS_Store
