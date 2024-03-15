@@ -9,30 +9,27 @@ class University
     private:
         // Properties
         string name;
-        string calendar_system;          // Semester or Quarter system
         bool is_public;                  // Differentiate public from private schools, 1 if public, 0 for private
-        int school_uid;                  // University ID used to find schools for transcripts...
-        int zipcode;                            
         int number_students;                
-        int number_faculty;
-        float annual_tuition;                   // Annual Dollar Amount
+        int number_faculty;              // Number of full-time faculty
+        float annual_tuition;            // Dollar Amount
 
     public:
         // Default Constructor
         University();
         // Overloaded Constructor 1
-        University(string name, string cal, bool is_public, int id, int zip, int num_s, int num_f, float tuition);
+        University(string name, bool is_public, int num_s, int number_f, float tuition);
         // Overloaded Constructor 2
-        University(string name, string cal, bool is_public, int id, int zip);
+        University(string name, bool public_status);
         // Destructor
         ~University();
 
         // Behaviors
 
         // Setters/ Mutators
-        void setTuition(float tuition);
         void changeNumStudents(int num_s);
         void changeNumFaculty(int num_f);
+        void setTuition(float tuition);
 
         // Getter
         bool getPublicStatus();

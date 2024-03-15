@@ -6,10 +6,7 @@
 University::University()
 {
     name = "";
-    calendar_system = "";
     is_public = false;
-    school_uid = 0;
-    zipcode = 0;
     number_students = 0;
     number_faculty = 0;
     annual_tuition = 0.0;
@@ -18,28 +15,22 @@ University::University()
 }
 
 // Overloaded Constructor 1
-University::University(string name, string cal, bool is_public, int id, int zip, int num_s, int num_f, float tuition)
+University::University(string name, bool is_public, int num_s, int num_f, float tuition)
 {
-    this->name = name;                  // Highlighting the "this" pointer
-    calendar_system = cal;
-    this->is_public = is_public;
-    school_uid = id;
-    zipcode = zip;
-    number_students = num_s;
+    this->name = name;                  // Highlight this pointer
+    this->is_public = is_public;                
+    number_students = num_s;              
     this->number_faculty = num_f;       // You can still use this pointer, even when the parameter name differs from attribute name
-    this->annual_tuition = tuition;
+    annual_tuition = tuition;             
 
     cout << "\nOverloaded Constructor 1...\n\n";
 }
 
 // Overloaded Constructor 2
-University::University(string name, string cal, bool is_public, int id, int zip)
+University::University(string name, bool public_status)
 {
-    this->name = name;                  // Highlighting the "this" pointer
-    calendar_system = cal;
-    this->is_public = is_public;
-    school_uid = id;
-    zipcode = zip;
+    this->name = name;
+    is_public = public_status;
 
     cout << "\nOverloaded Constructor 2...\n\n";
 }
@@ -96,7 +87,6 @@ float University::calcRevenuePerFaculty()
 void University::displaySchoolInfo()
 {
     cout << "University Name:\t" << name << endl
-        << "Academic Calendar System:\t" << calendar_system << endl
         << "Public or Private:\t";
     
     if (is_public)
