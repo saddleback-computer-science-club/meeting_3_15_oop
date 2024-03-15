@@ -5,11 +5,11 @@ int main()
   // Part I of Lecture (Kaveh)
   University test;
 
-  University uci("University of California, Irvine", true, 33467, 1553, 12522);
+  University uci("University of California, Irvine", 33467, 1553, 12522);
 
   uci.displaySchoolInfo();
 
-  University usc("University of Southern California", false);
+  University usc("University of Southern California");
 
   usc.displaySchoolInfo();
 

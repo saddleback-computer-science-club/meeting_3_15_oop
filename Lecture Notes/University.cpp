@@ -7,7 +7,6 @@ using namespace std;
 University::University()
 {
     name = "";
-    is_public = false;
     number_students = 0;
     number_faculty = 0;
     annual_tuition = 0.0;
@@ -16,10 +15,9 @@ University::University()
 }
 
 // Overloaded Constructor 1
-University::University(string name, bool is_public, int num_s, int num_f, float tuition)
+University::University(string name, int num_s, int num_f, float tuition)
 {
-    this->name = name;                  // Highlight this pointer
-    this->is_public = is_public;                
+    this->name = name;                  // Highlight this pointer             
     number_students = num_s;              
     this->number_faculty = num_f;       // You can still use this pointer, even when the parameter name differs from attribute name
     annual_tuition = tuition;             
@@ -28,10 +26,9 @@ University::University(string name, bool is_public, int num_s, int num_f, float 
 }
 
 // Overloaded Constructor 2
-University::University(string name, bool public_status)
+University::University(string name)
 {
     this->name = name;
-    is_public = public_status;
 
     cout << "\nOverloaded Constructor 2...\n\n";
 }
@@ -39,7 +36,7 @@ University::University(string name, bool public_status)
 // Destructor
 University::~University()
 {
-    cout << "\nDefault Destructor...\n\n";
+    cout << "\nDestructor...\n\n";
 }
 
 // Behaviors
@@ -59,11 +56,6 @@ void University::changeNumStudents(int num)
 void University::changeNumFaculty(int num)
 {
     number_faculty = num;
-}
-
-bool University::getPublicStatus()
-{
-    return is_public;
 }
 
 float University::calcStudentToFacultyRatio()
@@ -91,14 +83,8 @@ float University::calcRevenuePerFaculty()
 void University::displaySchoolInfo()
 {
     cout << "University Name:\t" << name << endl
-        << "Public or Private:\t";
-    
-    if (is_public)
-        cout << "Public" << endl;
-    else
-        cout << "Private" << endl;
-    
-    cout << "Annual Tuition:\t$" << annual_tuition << endl << endl
+
+        << "Annual Tuition:\t$" << annual_tuition << endl << endl
     
         << name << " has " << number_faculty << " faculty members and " << number_students << " students." 
         << endl << endl;
