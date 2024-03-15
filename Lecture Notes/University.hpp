@@ -1,10 +1,11 @@
+// Specification file for University Class
+
 #include <iostream>
 using namespace std;
 
 class University
 {
     private:
-        
         // Properties
         string name;
         string calendar_system;          // Semester or Quarter system
@@ -13,7 +14,7 @@ class University
         int zipcode;                            
         int number_students;                
         int number_faculty;
-        float tuition;                   // Dollar Amount
+        float annual_tuition;                   // Annual Dollar Amount
 
     public:
         // Default Constructor
@@ -26,14 +27,17 @@ class University
         ~University();
 
         // Behaviors
-        // What the 
+
+        // Setters/ Mutators
         void setTuition(float tuition);
         void changeNumStudents(int num_s);
         void changeNumFaculty(int num_f);
 
-        bool isPublic();
-        float calcFacultyToStudentRatio();
-        float calcRevenuePerStudent();
-        float calcRevenuePerFaculty();
+        // Getter
+        bool getPublicStatus();
 
+        // Various Functions
+        float calcStudentToFacultyRatio();
+        float calcRevenuePerFaculty();
+        void displaySchoolInfo();
 };
