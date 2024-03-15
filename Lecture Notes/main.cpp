@@ -65,7 +65,7 @@ int main()
 
 
     // Exercise II
-    //using the public functions of the subclasses change the goernmentFunding and the donation
+    //using the public functions of the subclasses change the governmentFunding and the donation
     // and output the new values
     publicUni.setGovernmentFunding(121212121212);
     privateUni.setDonation(1200000000);
