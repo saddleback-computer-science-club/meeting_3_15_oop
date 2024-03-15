@@ -1,4 +1,6 @@
 // Specification file for University Class
+#ifndef UNIVERSITY_HPP
+#define UNIVERSITY_HPP
 
 #include <iostream>
 #include <iomanip>
@@ -35,3 +37,4 @@ class University
         float calcRevenuePerFaculty();
         void displaySchoolInfo();
 };
+#endif
