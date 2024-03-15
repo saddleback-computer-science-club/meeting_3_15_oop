@@ -33,7 +33,7 @@ int main()
        << "USC:\t$" << usc.calcRevenuePerFaculty() << endl
        << "------------------------------------\n\n";
 
-  // Part II 
+  // Part II - Inheritance (Romina)
 
 
   return 0;

@@ -42,7 +42,6 @@ University::~University()
     cout << "\nDefault Destructor...\n\n";
 }
 
-
 // Behaviors
 
 void University::setTuition(float tuition)
@@ -50,11 +49,13 @@ void University::setTuition(float tuition)
     annual_tuition = tuition;
 }
 
+// EXERCISE 1: Implement setter
 void University::changeNumStudents(int num)
 {
     number_students = num;
 }
 
+// EXERCISE 1: Implement setter
 void University::changeNumFaculty(int num)
 {
     number_faculty = num;
@@ -74,6 +75,7 @@ float University::calcStudentToFacultyRatio()
     return ratio;
 }
 
+// EXERCISE 1: Implement function
 float University::calcRevenuePerFaculty()
 {
     float total_revenue = 0.0;
@@ -85,6 +87,7 @@ float University::calcRevenuePerFaculty()
     return avg_revenue_per_faculty;
 }
 
+// EXERCISE 1: Implement function
 void University::displaySchoolInfo()
 {
     cout << "University Name:\t" << name << endl
