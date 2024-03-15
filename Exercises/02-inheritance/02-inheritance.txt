@@ -1,0 +1,23 @@
+Extend the Course class you just wrote with a class to hold a transferable course. That is write a class to represent a transferable course, which inherits functionality from the generic course class you've already written.
+
+The new class should have:
+1. A string data member to describe the requirements for transfer eligilbility
+   (e.g. "Must be passed with a C or higher").
+2. Accessor and mutator for the new data member.
+2. A default constructor which takes no arguments.
+3. A constructor which takes all data members as input (those from the Course class and
+   the new ones from the TransferableCourse class).
+4. An overloaded print method which calls the parent's print(), then adds child-specific
+   details.
+
+
+TransferableCourse UML Diagram (extends Course)
+
+- transferReqs : string
+
++ TransferableCourse()
++ TransferableCourse(string, int, string)
++ print()
+
++ getTransferReqs() const : string
++ setTransferReqs(string) : void
