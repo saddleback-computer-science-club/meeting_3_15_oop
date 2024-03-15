@@ -21,16 +21,17 @@ int main()
 
   cout << "Student to Faculty Ratios:\n"
        << "--------------------------\n"
+       << setprecision(1) << showpoint << fixed
        << "UCI:\t" << uci.calcStudentToFacultyRatio() << endl
        << "USC:\t" << usc.calcStudentToFacultyRatio() << endl
        << "--------------------------\n\n";
 
   cout << "Average Tuition Revenue Per Faculty:\n"
-       << "--------------------------\n"
+       << "------------------------------------\n"
        << setprecision(2) << showpoint << fixed
        << "UCI:\t$" << uci.calcRevenuePerFaculty() << endl
        << "USC:\t$" << usc.calcRevenuePerFaculty() << endl
-       << "--------------------------\n\n";
+       << "------------------------------------\n\n";
 
   // Part II 
 

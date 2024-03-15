@@ -5,6 +5,7 @@
     "locale": "cpp",
     "new": "cpp",
     "string": "cpp",
-    "typeinfo": "cpp"
+    "typeinfo": "cpp",
+    "iomanip": "cpp"
   }
 }
