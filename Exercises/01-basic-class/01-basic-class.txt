@@ -6,12 +6,12 @@ Design a class to hold information about a college course. It should have:
 5. A function to print the course's information
 
 
-Course
+Course UML Diagram
 
 - title : string
 - credits : int
 
-+ Course();
++ Course()
 + Course(string, string, int)
 + print() const : void
 

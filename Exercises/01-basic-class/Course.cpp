@@ -1,22 +1,20 @@
 #include "Course.hpp"
 
-//Default constructor, calls detailed constructor
+//Default constructor, calls detailed constructor (constructor chaining)
 Course::Course() {
-    Course("Untitled", "N/A", 0);
+    Course("Untitled", 0);
 }
 
 //Detailed constructor, calls mutators to assign data
-Course::Course(string title, string code, int numCredits) {
-    this->setTitle(title);
-    this->setCode(code);
-    this->setNumCredits(numCredits);
+Course::Course(string title, int numCredits) {
+    setTitle(title);
+    setNumCredits(numCredits);
 }
 
 //Display this course's information
 void Course::print() const {
-    cout << "Course title: " << this->getTitle()
-        << "Course code: " << this->getCode()
-        << "Number of Credits: " << this->getNumCredits()
+    cout << "Course title: " << getTitle()
+        << "\nNumber of Credits: " << getNumCredits()
         << endl;
 }
 
@@ -25,10 +23,6 @@ void Course::print() const {
 
 string Course::getTitle() const {
     return title;
-}
-
-string Course::getCode() const {
-    return code;
 }
 
 int Course::getNumCredits() const {
@@ -40,10 +34,6 @@ int Course::getNumCredits() const {
 
 void Course::setTitle(string title) {
     this->title = title;
-}
-
-void Course::setCode(string code) {
-    this->code = code;
 }
 
 void Course::setNumCredits(int numCredits) {
