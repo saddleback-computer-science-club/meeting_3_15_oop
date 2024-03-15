@@ -1,9 +1,7 @@
 #ifndef PUBLICUNI_HPP
 #define PUBLICUNI_HPP
 
-
 #include "University.hpp"
-
 
 // Declaration of the PublicUni class which is a subclass of University
 class PublicUni : public University {
