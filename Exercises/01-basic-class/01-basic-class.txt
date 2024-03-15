@@ -1,0 +1,21 @@
+Design a class to hold information about a college course. It should have:
+1. Private members to hold a title and a number of credit units
+2. An accessor and a mutator for each of these data members
+3. A default constructor that takes no parameters
+4. An overloaded constructor that takes both data members as parameters
+5. A function to print the course's information
+
+
+Course
+
+- title : string
+- credits : int
+
++ Course();
++ Course(string, string, int)
++ print() const : void
+
++ getTitle() const : string
++ getNumCredits() const : int
++ setTitle(string) : void
++ setNumCredits(int) : void
