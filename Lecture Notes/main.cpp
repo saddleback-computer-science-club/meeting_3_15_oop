@@ -35,6 +35,5 @@ int main()
 
   // Part II - Inheritance (Romina)
 
-
   return 0;
 }
